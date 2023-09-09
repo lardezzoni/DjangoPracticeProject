@@ -12,15 +12,15 @@ class Customer(models.Model):
     
 class Interaction(models.Model):
     CHANNEL_CHOICES = [
-        ('phone', 'Phone')
-        ('sms', 'SMS')
-        ('email', 'Email')
-        ('letter', 'Letter')
+        ('phone', 'Phone'),
+        ('sms', 'SMS'),
+        ('email', 'Email'),
+        ('letter', 'Letter'),
     ]
 
     DIRECTION_CHOICES = [
-        ('inbound', 'Inbound')
-        ('outbound', 'Outbound')
+        ('inbound', 'Inbound'),
+        ('outbound', 'Outbound'),
     ]
 
     customer = models.ForeignKey(Customer, on_delete = models.CASCADE)
